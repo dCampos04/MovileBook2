@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="main min-h-screen">
+
+  <div class="content ">
+
+
+    <div class="flex flex-col items-center justify-center h-screen -mt-16">
+
+      <img src="/img/logoWhite.png" alt="Logo" class="h-44 -mb-10" style="cursor: pointer">
+
+      <div class="flex flex-col p-12 bg-white rounded-2xl shadow text-xl justify-center items-center" style="width: 53dvh; height: 42dvh">
+        <div class="font-semibold text-3xl mb-5">
+          Inicio de Sesión
+        </div>
+
+        <h1 class="font-semibold text-lg text-left w-full" style="color: #797474">
+          Correo Electrónico
+        </h1>
+
+        <div class="mb-3 w-full mx-auto">
+          <input type="email" maxlength="30" class="w-full border border-gray-300 rounded-xl px-3 py-2 focus:outline-none focus:border-blue-400" name="correoElectronico" style="background: #d9d9d9">
+        </div>
+
+        <h1 class="font-semibold text-lg text-left w-full" style="color: #797474">
+          Contraseña
+        </h1>
+
+        <div class="mb-5 w-full relative">
+          <input type="{{ showPassword ? 'text': 'password' }}" maxlength="30" class="w-full border border-gray-300 rounded-xl px-3 py-2 focus:outline-none focus:border-blue-400" name="contrasenia" style="background: #d9d9d9">
+          <span class="absolute top-0 right-0 mr-5 mt-2 cursor-pointer" (click)="togglePassword()">
+        @if (showPassword) {
+          <i class="fa fa-eye"></i>
+        } @else {
+          <i class="fa fa-eye-slash"></i>
+        }
+      </span>
+        </div>
+
+        <h5 class="text-sm hover:underline" style="cursor: pointer">
+          ¿Olvidaste tu contraseña?
+        </h5>
+
+        <div class="mt-auto text-lg">
+          <button class="text-white py-2 px-10 rounded-xl" style="background: #e02c2c">
+            Entrar
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div >
+</div>
+
+
+
+
+
+
